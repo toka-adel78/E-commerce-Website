@@ -1,20 +1,23 @@
 
+/* تعيين الخطوط العامة */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     direction: rtl;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
+
 
 header {
     color: white;
     padding: 20px;
     text-align: center;
-    background-image: url('photo_2025-01-05_12-47-50.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    height: 150px; 
+    background-image: url('photo_2025-01-05_12-47-50.jpg'); /* استبدل 'path/to/your-image.jpg' بالمسار الصحيح للصورة */
+    background-size: cover; /* يجعل الصورة تغطي كامل مساحة الـ header */
+    background-position: center; /* يحدد مكان الصورة داخل الـ header */
+    height: 200px; /* يمكنك تعديل الارتفاع حسب رغبتك */
 }
 
 header h1 {
@@ -28,7 +31,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -37,71 +40,101 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#products .products-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+section h2 {
+    color: #0000FF;
 }
 
-.product {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    width: 23%;
-    box-sizing: border-box;
-    text-align: center;
+
+
+/* تنسيق قسم المنتجات */
+/* تنسيق القسم الخاص بالمنتجات */
+.product-type {
     margin-bottom: 20px;
-}
-
-.product img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.product h3 {
-    margin: 10px 0;
-}
-
-.product p {
-    margin: 5px 0;
-}
-
-.product button {
-    background-color: #007bff;
-    color: white;
-    border: none;
+    border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-    cursor: pointer;
+    background-color: #f9f9f9;
 }
 
-.product button:hover {
+/* زر عرض الأنواع */
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
     background-color: #0056b3;
 }
 
-#contact p {
-    font-size: 1.2em;
-    text-align: center;
+/* التفاصيل المخفية */
+.details {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    display: none; /* مخفية افتراضياً */
 }
 
+/* تنسيق عناصر التفاصيل */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.product-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.product-item p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+
+
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 5px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 10px;
+    background-color: #0000FF;
+    color: white;
 }

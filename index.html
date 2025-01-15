@@ -24,40 +24,189 @@
     </section>
 
     <section id="products">
-        <h2>منتجاتنا</h2>
-        <div class="products-container">
-            <div class="product">
-                <img src="https://via.placeholder.com/150" alt="منظف 1">
-                <h3>مسحوق غسيل</h3>
-                <p>الانواع: اوكسي, اريال, باهي.</p>
-                <p>السعر: 80 جنيه</p>
-                <button>شراء الآن</button>
+        <!-- مسحوق غسيل -->
+        <div class="product-type">
+            <h4>منظف</h4>
+            <button onclick="toggleDetails('cleaningDetails')">عرض الأنواع</button>
+            <div id="cleaningDetails" class="details">
+                <h5>الأنواع:</h5>
+                <div class="product-details">
+                    <!-- نوع مينك -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-58-36.jpg" alt="مينك">
+                        <p><strong>ديتول:</strong></p>
+                        <ul>
+                            <li>1/5 لتر - 50 جنيه</li>
+                            <li>لتر - 90 جنيه</li>
+                        </ul>
+                    </div>
+                    <!-- نوع فاتيكا -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-58-40.jpg" alt="فاتيكا">
+                        <p><strong>بريكس:</strong></p>
+                        <ul>
+                            <li>1/5 لتر - 40 جنيه</li>
+                            <li>لتر - 80 جنيه</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/150" alt="منظف 2">
-                <h3>منظف للزجاج</h3>
-                <p>الانواع: فريدا, كلين.</p>
-                <p>السعر: 30 جنيه</p>
-                <button>شراء الآن</button>
+        </div>
+        <div class="product-type">
+            <h4>شامبو</h4>
+            <button onclick="toggleDetails('shampooDetails')">عرض الأنواع</button>
+            <div id="shampooDetails" class="details">
+                <h5>الأنواع:</h5>
+                <div class="product-details">
+                    <!-- نوع مينك -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-58-42.jpg" alt="مينك">
+                        <p><strong>مينك:</strong></p>
+                        <ul>
+                            <li>1/5 لتر - 50 جنيه</li>
+                            <li>لتر - 90 جنيه</li>
+                        </ul>
+                    </div>
+                    <!-- نوع فاتيكا -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-58-45.jpg" alt="فاتيكا">
+                        <p><strong>فاتيكا:</strong></p>
+                        <ul>
+                            <li>1/5 لتر - 40 جنيه</li>
+                            <li>لتر - 80 جنيه</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/150" alt="منظف 3">
-                <h3>شامبو</h3>
-                <p>الانواع: فاتيكا, كلير, سباركل, دوف.</p>
-                <p>السعر: 75 جنيه</p>
-                <button>شراء الآن</button>
+        </div>
+        <div class="product-type">
+            <h4>مسحوق غسيل</h4>
+            <button onclick="toggleDetails('powderDetails')">عرض الأنواع</button>
+            <div id="powderDetails" class="details">
+                <h5>الأنواع:</h5>
+                <div class="product-details">
+                    <!-- نوع مينك -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-58-49.jpg" alt="مينك">
+                        <p><strong>اريال:</strong></p>
+                        <ul>
+                            <li>1ك-80 جنيه</li>
+                            <li>2ك-170 جنيه</li>
+                        </ul>
+                    </div>
+                    <!-- نوع فاتيكا -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-58-47.jpg" alt="فاتيكا">
+                        <p><strong>اوكسي:</strong></p>
+                        <ul>
+                            <li>1ك-70 جنيه</li>
+                            <li>2ك-105 جنيه</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/150" alt="منظف 4">
-                <h3>صابون للأواني</h3>
-                <p>الانواع: اوكسي, فيري, بريل, فيبا.</p>
-                <p>السعر:50 جنيه</p>
-                <button>شراء الآن</button>
+        </div>
+        <div class="product-type">
+        </h4>مناديل</h4>
+            <button onclick="toggleDetails('wipeDetails')">عرض الأنواع</button>
+            <div id="wipeDetails" class="details">
+                <h5>الأنواع:</h5>
+                <div class="product-details">
+                    <!-- نوع مينك -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-58-52.jpg" alt="مينك">
+                        <p><strong>زينه:</strong></p>
+                        <ul>
+                            <li>300 منديل-25 جنيه</li>
+                            <li>777منديل-40 جنيه</li>
+                        </ul>
+                    </div>
+                    <!-- نوع فاتيكا -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-58-54.jpg" alt="فاتيكا">
+                        <p><strong>فاين:</strong></p>
+                        <ul>
+                            <li>25 جنيه</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-type">
+        </h4>كريم شعر</h4>
+            <button onclick="toggleDetails('creamDetails')">عرض الأنواع</button>
+            <div id="creamDetails" class="details">
+                <h5>الأنواع:</h5>
+                <div class="product-details">
+                    <!-- نوع مينك -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-58-56.jpg" alt="مينك">
+                        <p><strong>مينك:</strong></p>
+                        <ul>
+                            <li>1/5 لتر - 50 جنيه</li>
+                            <li>لتر - 90 جنيه</li>
+                        </ul>
+                    </div>
+                    <!-- نوع فاتيكا -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-59-00.jpg" alt="فاتيكا">
+                        <p><strong>فاتيكا:</strong></p>
+                        <ul>
+                            <li>1/5 لتر - 40 جنيه</li>
+                            <li>لتر - 80 جنيه</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-type">
+            <h4>مرطب لليد</h4>
+            <button onclick="toggleDetails('handrefresherDetails')">عرض الأنواع</button>
+            <div id="handrefresherDetails" class="details">
+                <h5>الأنواع:</h5>
+                <div class="product-details">
+                    <!-- نوع مينك -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-59-04.jpg" alt="مينك">
+                        <p><strong>نيفيا</strong></p>
+                        <ul>
+                            <li>1/5 لتر - 50 جنيه</li>
+                            <li>لتر - 90 جنيه</li>
+                        </ul>
+                    </div>
+                    <!-- نوع فاتيكا -->
+                    <div class="product-item">
+                        <img src="photo_2025-01-07_21-59-02.jpg" alt="فاتيكا">
+                        <p><strong>كير اند مور</strong></p>
+                        <ul>
+                            <li>1/5 لتر - 40 جنيه</li>
+                            <li>لتر - 80 جنيه</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+
+            // إظهار أو إخفاء التفاصيل
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+                    
+    
+    
+
+ <section id="contact">
         <h2>اتصل بنا</h2>
         <p>للاستفسار، تواصل مع الارقام التاليه :<strong>01060719048</strong></p>
     </section>
